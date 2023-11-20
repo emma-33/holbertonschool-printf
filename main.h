@@ -19,7 +19,7 @@
 struct choice
 {
 	char letter;
-	void (*print)(va_list ap);
+	int (*print)(va_list ap);
 };
 
 
