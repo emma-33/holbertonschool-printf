@@ -9,11 +9,11 @@
 
 int print_char(va_list ap)
 {
-	char c = va arg(ap, int);
+	char c = va_arg(ap, int);
 
 	_putchar(c);
 
-	return(1);
+	return (1);
 }
 
 
@@ -32,7 +32,7 @@ int print_str(va_list ap)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		return(NULL);
+		return (0);
 
 	while (str[lenght] != '\0')
 	{
@@ -40,5 +40,5 @@ int print_str(va_list ap)
 		lenght++;
 	}
 
-	return(1);
+	return (1);
 }

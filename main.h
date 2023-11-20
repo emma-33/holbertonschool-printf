@@ -6,21 +6,22 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdarg.h>
+#include <string.h>
 
 
 /**
- *
  * struct choice - parameter to check and print.
  * @letter: type.
  * @print: fonction to send to.
  *
  */
 
-struct choice
+typedef struct choice
 {
 	char letter;
 	int (*print)(va_list ap);
-};
+
+} choice;
 
 
 
