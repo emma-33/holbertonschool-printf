@@ -8,8 +8,7 @@
 int _printf(const char *format, ...)
 {
 int i = 0, j = 0;
-
-	/*make a conter for number of char printed*/
+int char_num = 0;
 	/*char *sep = "";*/
 
 va_list ap;
@@ -22,11 +21,12 @@ choice list[] = {
 
 	va_start(ap, format);
 
-	while (*format != '\0')
+	while (format[i] != '\0')
 	{
-		if (*format != '%')
+		if (format[i] != '%')
 		{
 			write(1, format, strlen(format));
+			char_num++;
 			format++;
 		}
 		else
@@ -45,6 +45,5 @@ choice list[] = {
 	}
 	_putchar('\n');
 	va_end(ap);
-	return (0);
-	/*return the counter*/
+	return (char_num);
 }
