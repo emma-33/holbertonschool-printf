@@ -56,7 +56,7 @@ int print_str(va_list ap, int *char_num)
 
 int print_prct(va_list ap, int *char_num)
 {
-	write(1, format, 1);
+	write(1, *format, 1);
 	char_num++;
 
 	return(1);
