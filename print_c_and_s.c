@@ -8,7 +8,7 @@
  *
  */
 
-int print_char(va_list ap, *char_num)
+int print_char(va_list ap, int *char_num)
 {
 	char c = va_arg(ap, int);
 
@@ -27,7 +27,7 @@ int print_char(va_list ap, *char_num)
  *
  */
 
-int print_str(va_list ap, *char_num)
+int print_str(va_list ap, int *char_num)
 {
 	char *str;
 	int str_len = 0;
@@ -54,7 +54,7 @@ int print_str(va_list ap, *char_num)
  *
  */
 
-int print_prct(va_list ap, *char_num)
+int print_prct(va_list ap, int *char_num)
 {
 	write(1, format, 1);
 	char_num++;

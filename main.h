@@ -10,8 +10,8 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_char(va_list ap, *char_num);
-int print_str(va_list ap, *char_num);
-int print_prct(va_list ap, *char_num);
+int print_char(va_list ap, int *char_num);
+int print_str(va_list ap, int *char_num);
+int print_prct(va_list ap, int *char_num);
 
 #endif
