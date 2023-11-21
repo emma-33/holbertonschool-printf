@@ -37,6 +37,9 @@ int _printf(const char *format, ...)
 			else if (format[i] == 's')
 				print_str(ap, &char_num);
 
+			else if (format[i] == 'i')
+				print_int(ap, &char_num);
+
 /**
 * else {_putchar('%');
 *	_putchar(format[i] + 1);
