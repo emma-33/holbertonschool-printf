@@ -32,7 +32,7 @@ int print_str(va_list ap)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		return(NULL);
+		return(0);
 
 	while (str[lenght] != '\0')
 	{
