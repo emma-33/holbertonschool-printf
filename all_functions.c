@@ -45,7 +45,7 @@ void print_str(va_list ap, int *char_num)
  * @char_num: counter for characters.
  */
 
-void print_prct(va_list ap, int *char_num)
+void print_prct(int *char_num)
 {
 	char prct = va_arg(ap, int);
 
