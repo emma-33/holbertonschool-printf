@@ -7,27 +7,13 @@
 #include <fcntl.h>
 #include <stdarg.h>
 #include <string.h>
-
-
-/**
- * struct choice - parameter to check and print.
- * @letter: type.
- * @print: fonction to send to.
- *
- */
-
-typedef struct choice
-{
-	char letter;
-	int (*print)(va_list ap);
-
-} choice;
-
-
+#include <stdlib.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_char(va_list ap);
-int print_str(va_list ap);
+void print_char(va_list ap, int *char_num);
+void print_str(va_list ap, int *char_num);
+void print_prct(int *char_num);
+void print_int(va_list ap, int *char_num);
 
 #endif

@@ -7,44 +7,46 @@
 */
 int _printf(const char *format, ...)
 {
-int i = 0, j = 0;
-
-	/*make a conter for number of char printed*/
+	int i = 0;
+	int char_num = 0;
 	/*char *sep = "";*/
+	va_list ap;
 
-va_list ap;
-
-choice list[] = {
-	{'c', print_char},
-	{'s', print_str},
-	{'\0', NULL}
-};
-
-	va_start(ap, format);
+va_start(ap, format);
 
 	while (format[i] != '\0')
 	{
 		if (format[i] != '%')
 		{
-			write(1, format, strlen(format));
-			format++;
+			write(1, format, 1);
+			char_num++;
 		}
 		else
 		{
-			while (list[j].letter)
-			{
-				if (format[i] == list[j].letter)
-				{
-				list[j].print(ap);
-				}
-				j++;
-			}
-			j = 0;
-			i++;
+			format++;
+			if (format[i] == '\0')
+				break;
+
+			if (format[i] == '%')
+				print_prct(&char_num);
+
+			else if (format[i] == 'c')
+				print_char(ap, &char_num);
+
+			else if (format[i] == 's')
+				print_str(ap, &char_num);
+
+			else if (format[i] == 'i')
+				print_int(ap, &char_num);
 		}
+		format++;
 	}
-	_putchar('\n');
 	va_end(ap);
-	return (0);
-	/*return the counter*/
+	return (char_num);
 }
+
+/**
+* else {_putchar('%');
+*	_putchar(format[i] + 1);
+*	char_num++;}
+*/
