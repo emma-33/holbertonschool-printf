@@ -24,7 +24,6 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-
 			if (format[i] == '\0')
 				break;
 
@@ -36,6 +35,7 @@ int _printf(const char *format, ...)
 
 			else if (format[i] == 's')
 				print_str;
+			}
 		}
 		format++;
 	}
