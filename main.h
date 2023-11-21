@@ -16,11 +16,11 @@
  *
  */
 
-struct choice
+typedef struct choice
 {
 	char letter;
 	int (*print)(va_list ap);
-};
+} choice;
 
 
 
