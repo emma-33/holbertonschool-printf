@@ -14,5 +14,7 @@ int _printf(const char *format, ...);
 void print_char(va_list ap, int *char_num);
 void print_str(va_list ap, int *char_num);
 void print_prct(int *char_num);
+void print_int(va_list ap, int *char_num);
+
 
 #endif
