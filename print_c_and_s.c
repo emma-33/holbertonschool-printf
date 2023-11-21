@@ -4,15 +4,16 @@
  *
  * print_char - print character.
  * @ap: list.
+ * @char_num: counter for character.
  *
  */
 
-int print_char(va_list ap)
+int print_char(va_list ap, *char_num)
 {
 	char c = va_arg(ap, int);
 
 	write(1, &c, 1);
-	char_num++;
+	char_num++
 
 	return(1);
 }
@@ -22,10 +23,11 @@ int print_char(va_list ap)
  *
  * print_str - print string.
  * @ap: list.
+ * @char_num: counter for character.
  *
  */
 
-int print_str(va_list ap)
+int print_str(va_list ap, *char_num)
 {
 	char *str;
 	int str_len = 0;
@@ -48,10 +50,11 @@ int print_str(va_list ap)
  *
  * print_prct - print pourcentage.
  * @ap: list.
+ * @char_num: counter for characters.
  *
  */
 
-int print_prct(va_list ap)
+int print_prct(va_list ap, *char_num)
 {
 	write(1, format, 1);
 	char_num++;
