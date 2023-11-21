@@ -7,8 +7,12 @@
 */
 int _printf(const char *format, ...)
 {
-	int i = 0, j = 0;
+	int i = 0;
 	int char_num = 0;
+	int (*p_p)(va_list, int) = &print_prct;
+	int (*p_c)(va_list, int) = &print_char;
+	int (*p_s)(va_list, int) = &print_str;
+
 	/*char *sep = "";*/
 	va_list ap;
 
@@ -28,14 +32,13 @@ int _printf(const char *format, ...)
 				break;
 
 			if (format[i] == '%')
-				print_prct;
+				(*p_p)(ap, char_num);
 
 			else if (format[i] == 'c')
-				print_char;
+				(*p_c)(ap, char_num);
 
 			else if (format[i] == 's')
-				print_str;
-			}
+				(*p_s)(ap, char_num);
 		}
 		format++;
 	}
