@@ -56,13 +56,14 @@ void print_prct(va_list ap, int *char_num)
 
 /**
  * print_inr - print integer.
- * 
+ * @ap: list.
+ * @char_num: counter for characters.
  */
 
 void print_int(va_list ap, int *char_num)
 {
 	int i = va_arg(ap, int);
 
-	write(1, &i, strlen(i);
+	write(1, &i, strlen(i));
 	*char_num++;
 }
