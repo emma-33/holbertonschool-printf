@@ -29,7 +29,7 @@ void print_str(va_list ap, int *char_num)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		return(0);
+		break;
 
 	while (str[str_len] != '\0')
 		str_len++;
