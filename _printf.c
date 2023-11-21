@@ -29,13 +29,19 @@ int _printf(const char *format, ...)
 				break;
 
 			if (format[i] == '%')
-				print_prct(ap, &char_num);
+				print_prct(&char_num);
 
 			else if (format[i] == 'c')
 				print_char(ap, &char_num);
 
 			else if (format[i] == 's')
 				print_str(ap, &char_num);
+
+/**
+* else {_putchar('%');
+*	_putchar(format[i] + 1);
+*	char_num++;}
+*/
 		}
 		format++;
 	}
