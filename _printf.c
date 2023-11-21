@@ -22,9 +22,9 @@ choice list[] = {
 
 	va_start(ap, format);
 
-	while (*format != '\0')
+	while (format[i] != '\0')
 	{
-		if (*format != '%')
+		if (format[i] != '%')
 		{
 			write(1, format, strlen(format));
 			format++;
