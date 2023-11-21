@@ -13,7 +13,7 @@ int print_char(va_list ap, int *char_num)
 	char c = va_arg(ap, int);
 
 	write(1, &c, 1);
-	char_num++
+	char_num++;
 
 	return(1);
 }
