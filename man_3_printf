@@ -1,0 +1,61 @@
+# **Man page 3 : _printf**
+
+
+## **NAME**
+
+_printf
+
+
+## **SYNOPSIS**
+
+#include <main.h>
+
+int _printf(const char *format, ...);
+
+
+## **DESCRIPTION**
+
+The function _printf print with specifiers format to the standars output.
+It's  a variadic function.
+_printf is a copy to the standard function printf.
+
+
+## **FORMAT SPECIFIERS**
+
+the _printf takes the following options to format the output :
+
+-%c
+Prints a single character.
+
+-%s
+Prints a string.
+
+-%i
+Prints a integer.
+
+-%d
+Prints a decimal number.
+
+-%%
+Prints just %.
+
+
+## **EXAMPLES**
+
+_printf("%c",'p'); --> "t".
+
+_printf("%s", "let's code"); --> "let's code".
+
+_printf("%i", 33); --> "33".
+
+_printf("%d", -33); --> "-33".
+
+
+## **BUGS**
+
+For this minimaliste version of printf no knows bugs at the moment.
+
+## **AUTHOR**
+
+Lateyron Emma
+Laroche Marion
