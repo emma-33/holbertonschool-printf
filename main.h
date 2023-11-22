@@ -9,6 +9,13 @@
 #include <stdarg.h>
 
 
+typedef struct choice
+{
+	char letter;
+	int (*check_function)(va_list ap);
+} choice_c;
+
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list ap);

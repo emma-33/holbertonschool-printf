@@ -8,8 +8,8 @@
 
 int print_char(va_list ap)
 {
-	char c = va_arg(ap, int)
-		_puthar(c);
+	char c = va_arg(ap, int);
+       _putchar(c);
 
 	return (1);
 }
@@ -33,7 +33,7 @@ int print_str(va_list ap)
 
 	while (str[str_len] != '\0')
 		str_len++;
-	write(1, str[str_len], str_len);
+	write(1, str, str_len);
 
 	return (str_len);
 
