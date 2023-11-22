@@ -47,17 +47,33 @@ int print_str(va_list ap)
 
 /**
 * print_prct - print pourcentage.
-* @prct: charactere %.
-* Return: lenght.
+* @ap: va_list.
+* Return: 1.
 */
 
 int print_prct(va_list ap)
 {
 	char prct = va_arg(ap, int);
 
-	if (prct == '%')
-	{
-		_putchar('%');
-	}
+	_putchar(prct);
+	
 	return (1);
+}
+
+
+/**
+ * print_int - print an integer.
+ * @ap: va_list.
+ * Return: n.
+ */
+
+
+int print_int(va_list ap)
+{
+	int n = 0;
+	int nb;
+
+	nb = va_arg(ap, int);
+	print_number(nb, &n);
+	return (n);
 }

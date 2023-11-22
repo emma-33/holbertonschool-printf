@@ -22,6 +22,6 @@ int print_char(va_list ap);
 int print_str(va_list ap);
 int print_prct(va_list ap);
 int print_int(va_list ap);
-
+void print_number(int n, int *char_num);
 
 #endif
