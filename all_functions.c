@@ -2,26 +2,26 @@
 
 /**
  * print_char - print character.
- * @ap: list.
- * @char_num: counter for character.
+ * @ap: va_list.
+ * Return: 1.
  */
 
-void print_char(va_list ap, int *char_num)
+int print_char(va_list ap)
 {
-	char c = va_arg(ap, int);
+	char c = va_arg(ap, int)
+		_puthar(c);
 
-	write(1, &c, 1);
-	*char_num++;
+	return (1);
 }
 
 
 /**
  * print_str - print string.
- * @ap: list.
- * @char_num: counter for character.
+ * @ap: va_list.
+ * Return: str_len - 1('\0').
  */
 
-void print_str(va_list ap, int *char_num)
+int print_str(va_list ap)
 {
 	char *str;
 	int str_len = 0;
@@ -29,41 +29,29 @@ void print_str(va_list ap, int *char_num)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		exit(0);
+		exit(2);
 
 	while (str[str_len] != '\0')
 		str_len++;
-	write(1, str, str_len);
-	*char_num += str_len;
+	write(1, str[str_len], str_len);
+
+	return (str_len);
 
 }
 
 
 /**
  * print_prct - print pourcentage.
- * @ap: list.
- * @char_num: counter for characters.
+ * @prct: charactere %.
+ * Return: lenght.
  */
 
-void print_prct(int *char_num)
+int print_prct(char prct)
 {
-	char prct = va_arg(ap, int);
-
-	write(1, &prct, 1);
-	*char_num++;
-
-}
-
-/**
- * print_inr - print integer.
- * @ap: list.
- * @char_num: counter for characters.
- */
-
-void print_int(va_list ap, int *char_num)
-{
-	int i = va_arg(ap, int);
-
-	write(1, &i, strlen(i));
-	*char_num++;
+	if (prct == %)
+	{
+		_putchar('%');
+		return (1);
+	}
+	return (0);
 }
