@@ -46,6 +46,7 @@ int _printf(const char *format, ...)
 choice_c list[] = {
 	{'c', print_char},
 	{'s', print_str},
+	{'d', print_int},
 	{'%', print_prct},
 	{'\0', NULL},
 };
