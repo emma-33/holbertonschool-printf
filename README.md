@@ -1,9 +1,9 @@
-Project Printf
+# **Project Printf**
 
 Write your own printf function, _printf.
 
 
-Team and Tasks
+## **Team and Tasks**
 
 This project was released by Emma Lateyron and Marion Laroche in Holbertonschool's Bordeaux.
 We work on the campus every day and we make a Check in every morning and a Check out every afternoon.
@@ -13,12 +13,12 @@ This project consist to rebuild of the standard printf function in C.
 Our project required a function capable of printing with the %d, %c, %s, and %i specifiers to standard output. printf returns the number of characters printed (excluding the null byte at the end of strings). We were not asked to handle flag characters, field width, precision, or length.
 
 
-Prototype
+## **Prototype**
 
 int _printf(const char *format, ...);
 
 
-Format specifiers
+## **Format specifiers**
 
 | specifier |        description       |                  exemple                       | 
 |----------:|--------------------------|------------------------------------------------|
@@ -28,12 +28,12 @@ Format specifiers
 |    %d     | prints a number decimal  | _printf("%d", -33);          --> "-33"         |
 
 
-Compilation
+## **Compilation**
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
-Files
+## **Files**
 
 |        file        |                   description                        |
 |-------------------:|------------------------------------------------------|
@@ -45,7 +45,8 @@ Files
 
 
 
-Autors
+## **Autors**
 
-Lateyron Emma https://github.com/emma-33
-Laroche Marion https://github.com/Mamuche
+Lateyron Emma [Github](https://github.com/emma-33).
+
+Laroche Marion [Github](https://github.com/Mamuche).
