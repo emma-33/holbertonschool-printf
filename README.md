@@ -33,10 +33,19 @@ Compilation
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
-Desciption
+Files
+
+|        file        |                   description                        |
+|-------------------:|------------------------------------------------------|
+| _printf.c          | Main function printf.                                |
+| _putchar.c         | Function to write a charcater.                       |
+| all_functions.c    | Functions handles % format.                          |
+| main.c             | Test file who compare -printf and printf functions.  |
+| main.h             | Header file, contain all prototypes and structure.   |
 
 
 
-* prototype: int _printf(constchar *format, ...);
-* the function _printf return the lenght of the input.
-* the file main.h contain the structure for the format specifiers.
+Autors
+
+Lateyron Emma https://github.com/emma-33
+Laroche Marion https://github.com/Mamuche
