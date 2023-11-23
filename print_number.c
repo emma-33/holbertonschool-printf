@@ -8,7 +8,7 @@
  */
 void print_number(int n, int *char_num)
 {
-	unsigned int n_1;
+	unsigned int num;
 
 	if (n < 0)
 	{
@@ -16,11 +16,11 @@ void print_number(int n, int *char_num)
 		*char_num += 1;
 		_putchar('-');
 	}
-	n_1 = n;
-	if (n_1 / 10)
+	num = n;
+	if (num / 10)
 	{
-		print_number(n_1 / 10, char_num);
+		print_number(num / 10, char_num);
 	}
 	*char_num += 1;
-	_putchar((n_1 % 10) + '0');
+	_putchar((num % 10) + '0');
 }

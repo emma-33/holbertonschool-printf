@@ -53,9 +53,9 @@ int print_str(va_list ap)
 
 int print_prct(va_list ap)
 {
-	char prct = va_arg(ap, int);
-
-	_putchar(prct);
+	(void)ap;
+	
+	_putchar('%');
 	
 	return (1);
 }
@@ -71,9 +71,9 @@ int print_prct(va_list ap)
 int print_int(va_list ap)
 {
 	int n = 0;
-	int nb;
+	int num;
 
-	nb = va_arg(ap, int);
-	print_number(nb, &n);
+	num = va_arg(ap, int);
+	print_number(num, &n);
 	return (n);
 }
