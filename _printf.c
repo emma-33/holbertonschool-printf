@@ -35,6 +35,10 @@ int _printf(const char *format, ...)
 					char_count += f(ap);
 					i += 2;
 				}
+				else
+				{
+					return (-1);
+				}
 			}
 			_putchar(format[i]);
 			i++;
