@@ -18,10 +18,8 @@ int _printf(const char *format, ...)
 	}
 	va_start(ap, format);
 
-	if (*format != '\0')
+	while (format[i] != '\0')
 	{
-		while (format[i] != '\0')
-		{
 			if (format[i] == '%' && (!format[i + 1] || format[i + 1] == '\0'))
 			{
 				return (-1);
@@ -33,18 +31,20 @@ int _printf(const char *format, ...)
 				if (f != NULL)
 				{
 					char_count += f(ap);
-					i += 2;
+					i++;
 				}
 				else
 				{
 					return (-1);
 				}
 			}
-			_putchar(format[i]);
+			else
+			{
+				_putchar(format[i]);
+				char_count++;
+			}
 			i++;
-			char_count++;
 		}
-	}
 	va_end(ap);
 	return (char_count);
 }
