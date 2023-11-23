@@ -11,7 +11,7 @@
 /**
  *struct choice - param to check.
  * @letter: type.
- * @check_function: fonction to send to.
+ * @f: fonction to send to.
  */
 
 typedef struct choice

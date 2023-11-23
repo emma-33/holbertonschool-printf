@@ -35,10 +35,10 @@ int print_str(va_list ap)
 		str = "(null)";
 	}
 	while (str[str_len] != '\0')
-		{
-			_putchar(str[str_len]);
-			str_len++;
-		}
+	{
+		_putchar(str[str_len]);
+		str_len++;
+	}
 	return (str_len);
 }
 
