@@ -31,16 +31,14 @@ int print_str(va_list ap)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		str = "(null)";
-
-	else
 	{
-		while (str[str_len] != '\0')
+		str = "(null)";
+	}
+	while (str[str_len] != '\0')
 		{
 			_putchar(str[str_len]);
 			str_len++;
 		}
-	}
 	return (str_len);
 }
 
