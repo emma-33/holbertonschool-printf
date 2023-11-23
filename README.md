@@ -52,6 +52,13 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 | get_function       | Choose the corresponding function.                   |
 
 
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="C:\Users\mario\Downloads\printf.jpg">
+ <source media="(prefers-color-scheme: light)" srcset="C:\Users\mario\Downloads\printf.jpg">
+ <img alt="FLOWCHARTS" src="C:\Users\mario\Downloads\printf.jpg">
+</picture>
+   
+
 ## **Authors**
 
 Lateyron Emma [Github](https://github.com/emma-33).
