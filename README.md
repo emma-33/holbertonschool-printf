@@ -15,12 +15,12 @@ Our project required a function capable of printing with the %d, %c, %s, and %i 
 
 ## **Prototype**
 
-int _printf(const char *format, ...)
+int _printf(const char *format, ...);
 
 
 ## **Format specifiers**
 
-| specifier |        description       |                  exemple                       | 
+| specifier |        description       |                  exemple                       |
 |----------:|--------------------------|------------------------------------------------|
 |    %c     | prints 1 character       | _printf("%c",'p');           --> "t"           |
 |    %s     | prints a string          | _printf("%s", "let's code"); --> "let's code"  |
