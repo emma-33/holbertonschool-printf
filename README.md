@@ -45,12 +45,12 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 |        file        |                   description                        |
 |-------------------:|------------------------------------------------------|
-| _printf.c          | Main function printf.                                |
-| _putchar.c         | Function to write a charcater.                       |
+| _printf.c          | Main function _printf.                               |
+| _putchar.c         | Function to write a character.                       |
 | all_functions.c    | Functions handles % format.                          |
-| main.c             | Test file who compare -printf and printf functions.  |
-| main.h             | Header file, contain all prototypes and structure.   |
-| print_number       | Function to print number.                            |
+| main.c             | Test file who compare _printf and printf outputs.    |
+| main.h             | Header file, contains all prototypes and structure.  |
+| print_number       | Function to print numbers.                           |
 | get_function       | Choose the corresponding function.                   |
 
 

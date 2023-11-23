@@ -42,7 +42,7 @@ Prints just %.
 
 .SH EXAMPLES
 
-_printf("%c",'t'); --> "t".
+_printf("%c",'p'); --> "p".
 
 _printf("%s", "let's code"); --> "let's code".
 
