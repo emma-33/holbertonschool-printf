@@ -18,11 +18,11 @@ int (*get_function(char s))(va_list)
 
 int i = 0;
 
-while (list[i].check_function != NULL)
+while (list[i].f != NULL)
 {
 if (s == list[i].letter)
 {
-return (list[i].check_function);
+return (list[i].f);
 }
 i++;
 }

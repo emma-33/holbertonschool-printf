@@ -17,7 +17,7 @@
 typedef struct choice
 {
 	char letter;
-	int (*check_function)(va_list ap);
+	int (*f)(va_list ap);
 } choice_c;
 
 
