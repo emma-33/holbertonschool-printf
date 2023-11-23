@@ -54,9 +54,9 @@ int print_str(va_list ap)
 int print_prct(va_list ap)
 {
 	(void)ap;
-	
+
 	_putchar('%');
-	
+
 	return (1);
 }
 
