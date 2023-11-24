@@ -56,12 +56,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 ## **Flowchart for _printf**
 
-
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/emma-33/holbertonschool-printf/blob/main/printf%20(1).jpg">
- <source media="(prefers-color-scheme: light)" srcset="https://github.com/emma-33/holbertonschool-printf/blob/main/printf%20(1).jpg">
- <img alt="FLOWCHARTS" src="https://github.com/emma-33/holbertonschool-printf/blob/main/printf%20(1).jpg">
-</picture>
+![flowchart](https://github.com/emma-33/holbertonschool-printf/assets/136717258/3857cbae-952c-4980-b971-c68bb9ad8b43)
    
 
 ## **Authors**
