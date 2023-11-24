@@ -14,17 +14,17 @@ int (*get_function(char s))(va_list)
 	{'i', print_int},
 	{'%', print_prct},
 	{'\0', NULL},
-};
+	};
 
-int i = 0;
+	int i = 0;
 
-while (list[i].f != NULL)
-{
-if (s == list[i].letter)
-{
-return (list[i].f);
-}
-i++;
-}
-return (NULL);
+	while (list[i].f != NULL)
+	{
+		if (s == list[i].letter)
+		{
+			return (list[i].f);
+		}
+		i++;
+	}
+	return (NULL);
 }
